@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.wheel_container{
+  font-size: 15vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: 'Merriweather', serif;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 10%, #000 30%, rgba(0,0,0,.6) 100%);
+  -webkit-mask-size: 300%;
+  animation: shine 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheel_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bhdLno{
+  margin: 6vw 0 0 1vw;
+  z-index: -1 !important;
+}
+
+.sel_option{
+  margin-top: 10rem;
+}
+
+@keyframes shine {
+  from { -webkit-mask-position: 100%; }
+  to { -webkit-mask-position: -100%; }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .wheelImg{
+    position: absolute;
+    width: 29.8rem;
+    top: 4.5vw;
+    z-index: 2;
+    margin-left: 0.7rem;
+  }
+  
+  .clickImg{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    z-index: 3;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem 0 #000;
+  }
+
+  .wheel_wrapper{
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .wheelImg{
+    position: absolute;
+    width: 29.8rem;
+    top: 4.5vw;
+    z-index: 2;
+    margin-left: 0.7rem;
+  }
+  
+  .clickImg{
+    position: absolute;
+    left: 47%;
+    top: 27%;
+    z-index: 3;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem 0 #000;
+  }
+
+  .wheel_wrapper{
+    margin: 0 50% !important;
+  }
+}
+
+@media (min-width: 991px) {
+  .wheelImg{
+    position: absolute;
+    width: 29.8rem;
+    top: 4.8vw;
+    z-index: 2;
+    margin-left: 1.2rem;
+  }
+  
+  .clickImg{
+    position: absolute;
+    left: 48%;
+    top: 28.5%;
+    z-index: 3;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem 0 #000;
+  }
+
+  .wheel_wrapper{
+    margin: 0 50% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wheelImg{
+    position: absolute;
+    width: 29.8rem;
+    top: 5.2vw;
+    z-index: 2;
+    margin-left: 1.2rem;
+  }
+  
+  .clickImg{
+    position: absolute;
+    left: 48.5%;
+    top: 29.5%;
+    z-index: 3;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem 0 #000;
+  }
+
+  .wheel_wrapper{
+    margin: 0 50% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wheelImg{
+    position: absolute;
+    width: 29.8rem;
+    top: 5.2vw;
+    z-index: 2;
+    margin-left: 1.2rem;
+  }
+  
+  .clickImg{
+    position: absolute;
+    left: 49%;
+    top: 32.5%;
+    z-index: 3;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem 0 #000;
+  }
+
+  .wheel_wrapper{
+    margin: 0 50% !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wheelImg{
+    position: absolute;
+    width: 29.8rem;
+    top: 5.2vw;
+    z-index: 2;
+    margin-left: 1.2rem;
+  }
+  
+  .clickImg{
+    position: absolute;
+    left: 48.7%;
+    top: 31.7%;
+    z-index: 3;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem 0 #000;
+  }
+
+  .wheel_wrapper{
+    margin: 0 50% !important;
+  }
+}
